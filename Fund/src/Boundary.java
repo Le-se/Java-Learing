@@ -5,14 +5,14 @@ import javax.swing.*;
 
 public class Boundary extends JFrame {
     //字体
-    private Font f1 = new Font("微软雅黑", Font.PLAIN, 20);
+    private Font f1 = new Font("微软雅黑", Font.PLAIN, 21);
     private Font f2 = new Font("微软雅黑", Font.PLAIN, 18);
     private Font f3 = new Font("微软雅黑", Font.PLAIN, 22);
     //构造方法
     public Boundary() {
         //创建一个窗口
         setTitle("2016 1.4-10.28 汇添富移动互联股票型基金 收益计算");//窗口标题
-        setSize(345, 410);//窗口大小
+        setSize(365, 410);//窗口大小
         setLocationRelativeTo(null);//窗口显示在屏幕中间
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//关闭方式
         //panel0
@@ -27,40 +27,62 @@ public class Boundary extends JFrame {
         JLabel jl1 = new JLabel("买入时间：");
         JLabel chosemonth = new JLabel("月");
         JLabel choseday = new JLabel("日");
+        JLabel chosehour=new JLabel("时");
+
         jl1.setFont(f2);
         chosemonth.setFont(f2);
         choseday.setFont(f2);
+        chosehour.setFont(f2);
+
         JComboBox buymonthchooser = new JComboBox();
+        JComboBox buydaychooser = new JComboBox();
+        JComboBox buyhourchooser=new JComboBox();
+
         for (int i = 1; i <= 10; i++)
             buymonthchooser.addItem(i);
-        JComboBox buydaychooser = new JComboBox();
         for (int i = 1; i <= 31; i++)
             buydaychooser.addItem(i);
+        for(int i=0;i<=23;i++)
+            buyhourchooser.addItem(i);
+
         jp1.add(jl1);
         jp1.add(buymonthchooser);
         jp1.add(chosemonth);
         jp1.add(buydaychooser);
         jp1.add(choseday);
+        jp1.add(buyhourchooser);
+        jp1.add(chosehour);
 
         //panel2
         JPanel jp2 = new JPanel();
         JLabel jl2 = new JLabel("卖出时间：");
         JLabel chosemonth2 = new JLabel("月");
         JLabel choseday2 = new JLabel("日");
+        JLabel chosehour2=new JLabel("时");
+
         jl2.setFont(f2);
         chosemonth2.setFont(f2);
         choseday2.setFont(f2);
+        chosehour2.setFont(f2);
+
         JComboBox sellmonthchooser = new JComboBox();
+        JComboBox selldaychooser = new JComboBox();
+        JComboBox sellhourchooser=new JComboBox();
+
         for (int i = 1; i <= 10; i++)
             sellmonthchooser.addItem(i);
-        JComboBox selldaychooser = new JComboBox();
         for (int i = 1; i <= 31; i++)
             selldaychooser.addItem(i);
+        for(int i=0;i<=23;i++)
+            sellhourchooser.addItem(i);
+
         jp2.add(jl2);
         jp2.add(sellmonthchooser);
         jp2.add(chosemonth2);
         jp2.add(selldaychooser);
         jp2.add(choseday2);
+        jp2.add(sellhourchooser);
+        jp2.add(chosehour2);
 
         //panel3
         JPanel jp3 = new JPanel();
@@ -113,14 +135,32 @@ public class Boundary extends JFrame {
                         try {
                             int bmon=buymonthchooser.getSelectedIndex()+1;
                             int bday=buydaychooser.getSelectedIndex()+1;
+                            if(buyhourchooser.getSelectedIndex()>15){
+                                if (Count.lastday(bmon,bday)){
+                                    bmon++;
+                                    bday=1;
+                                }
+                                else {
+                                    bday++;
+                                }
+                            }
                             int smon=sellmonthchooser.getSelectedIndex()+1;
                             int sday=selldaychooser.getSelectedIndex()+1;
-                            if(!Count.legal(bmon,bday,smon,sday)){
-                                jlex1=new JLabel("日期输入错误请重新输入！",JLabel.CENTER);
-
+                            if(sellhourchooser.getSelectedIndex()>15){
+                                if(Count.lastday(smon,sday)){
+                                    smon++;
+                                    sday=1;
+                                }
+                                else{
+                                    sday++;
+                                }
                             }
-                            else if(jt.getText().equals("请输入金额")||jt.getText().equals("")){
+
+                            if(jt.getText().equals("请输入金额")||jt.getText().equals("")){
                                 jlex1=new JLabel("请输入金额！",JLabel.CENTER);
+                            }
+                            else if(!Count.legal(bmon,bday,smon,sday)){
+                                jlex1=new JLabel("日期输入错误请重新输入！",JLabel.CENTER);
                             }
                             else{
                                 int money=Integer.parseInt(jt.getText());

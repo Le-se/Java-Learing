@@ -1,4 +1,5 @@
 import java.io.*;
+import java.lang.management.MonitorInfo;
 
 public class Count {
 
@@ -95,5 +96,13 @@ public class Count {
         }
         result = result - money;
         return result;
+    }
+
+    public static boolean lastday(int month,int day){
+        if((month==2&&day==29)||(month==3&&day==31)||(month==4&&day==30)
+        ||(month==5&&day==31)||(month==6&&day==30)||(month==7&&day==31)
+        ||(month==8&&day==31)||(month==9&&day==30))
+            return true;
+        return false;
     }
 }
