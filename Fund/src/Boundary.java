@@ -156,6 +156,13 @@ public class Boundary extends JFrame {
                                 }
                             }
 
+                            String[] buyinfo=Count.search(bmon+"-"+bday).split("-|@@");
+                            String[] sellinfo=Count.search(smon+"-"+sday).split("-|@@");
+                            bmon=Integer.parseInt(buyinfo[0]);
+                            bday=Integer.parseInt(buyinfo[1]);
+                            smon=Integer.parseInt(sellinfo[0]);
+                            sday=Integer.parseInt(sellinfo[1]);
+
                             if(jt.getText().equals("请输入金额")||jt.getText().equals("")){
                                 jlex1=new JLabel("请输入金额！",JLabel.CENTER);
                             }
@@ -167,9 +174,9 @@ public class Boundary extends JFrame {
                                 JLabel jlex2=new JLabel("<html><body>"
                                         +"持有"+Count.interval(bmon,bday,smon,sday)+"天"+"<br>"+"<br>"
                                         +"买入费率："+Count.buyrate(money)+"<br>"
-                                        +bmon+"月"+bday+"日"+"买入净值:"+Count.search(bmon+"-"+bday)+"<br>"+"<br>"
+                                        +bmon+"月"+bday+"日"+"买入净值:"+buyinfo[2]+"<br>"+"<br>"
                                         +"卖出费率："+Count.sellrate(Count.interval(bmon,bday,smon,sday))+"<br>"
-                                        +smon+"月"+sday+"日"+"卖出净值:"+Count.search(smon+"-"+sday)
+                                        +smon+"月"+sday+"日"+"卖出净值:"+sellinfo[2]
                                         +"<body></html>",JLabel.CENTER);
                                 jlex1 = new JLabel("净赚" + String.format("%.2f",
                                         Count.count(bmon, bday, smon, sday, money)) + "元"

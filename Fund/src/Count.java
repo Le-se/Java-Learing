@@ -6,30 +6,63 @@ public class Count {
     public static boolean legal(int bmon, int bday, int smon, int sday) throws FileNotFoundException {
         String buy = bmon + "-" + bday;//买入日期
         String sell = smon + "-" + sday;//卖出日期
-        double buym = search(buy);//买入净值
-        double sellm = search(sell);//卖出净值
+        String[] binfo=search(buy).split("@@");//买入信息
+        String[] sinfo=search(sell).split("@@");//卖出信息
+        double buym = Double.parseDouble(binfo[1]);//买入净值
+        double sellm = Double.parseDouble(sinfo[1]);//卖出净值
         int interval = interval(bmon, bday, smon, sday);
         if (buym == 0 || sellm == 0 || interval < 0)
             return false;
         return true;
     }
 
-    public static double search(String date) throws FileNotFoundException {//寻找净值
+    public static String search(String date) throws FileNotFoundException {//寻找净值
         File file = new File("data.txt");
         FileReader fr = new FileReader(file);
         try {
             BufferedReader br = new BufferedReader(fr);
-            String s;
-            while ((s = br.readLine()) != null) {
-                String str[] = s.split("@@");
-                if (date.equals(str[0])) {
-                    return Double.parseDouble(str[1]);
+            String loc="0-0@@0";//当前字符串
+            while (true) {
+                String tmp=loc;
+                String[] p=tmp.split("-|@@");//上个字符串
+                int[] pre=new int[2];//上条日期信息
+                for(int i=0;i<2;i++){
+                    pre[i]=Integer.parseInt(p[i]);
+                }
+                loc= br.readLine();
+                if (loc==null){
+                     return "0-0@@0";
+                }
+                String[] s = loc.split("-|@@");
+                int[] str=new int[2];//文档当前日期信息
+                for(int i=0;i<2;i++){
+                    str[i]=Integer.parseInt(s[i]);
+                }
+                String d[]=date.split("-");
+                int[] dinfo=new int[2];//输入日期信息
+                for(int i=0;i<2;i++){
+                    dinfo[i]=Integer.parseInt(d[i]);
+                }
+                if (dinfo[0]==str[0]) {
+                    if(dinfo[1]==str[1]) {//日期一样
+                        return loc;
+                    }
+                    else if(dinfo[1]<pre[1]&&dinfo[1]>str[1])//月中的休息日
+                    {
+                        return tmp;
+                    }
+                    else if (dinfo[0]<pre[0]&&dinfo[1]>str[1]){//月末休息日
+                        return tmp;
+                    }
+                }
+                else if(dinfo[0]==pre[0]&&dinfo[0]>str[0]){
+                    return tmp;
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return 0;
+        return "0-0@@0";
     }
 
     public static int during(int month, int day) {//计算绝对天数
@@ -70,8 +103,10 @@ public class Count {
         int interval = interval(bmon, bday, smon, sday);//间隔日期
         String buy = bmon + "-" + bday;//买入日期
         String sell = smon + "-" + sday;//卖出日期
-        double buym = search(buy);//买入净值
-        double sellm = search(sell);//卖出净值
+        String[] binfo=search(buy).split("@@");//买入信息
+        String[] sinfo=search(sell).split("@@");//卖出信息
+        double buym = Double.parseDouble(binfo[1]);//买入净值
+        double sellm = Double.parseDouble(sinfo[1]);//卖出净值
         double result = -1;//结果，为-1时代表输入错误
         double num = 0;
         if (!legal(bmon, bday, smon, sday))
@@ -104,5 +139,13 @@ public class Count {
         ||(month==8&&day==31)||(month==9&&day==30))
             return true;
         return false;
+    }
+
+    public static void main(String[] args) {
+        try {
+            System.out.println(search("1-2"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }
