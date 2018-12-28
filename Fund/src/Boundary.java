@@ -163,7 +163,7 @@ public class Boundary extends JFrame {
                             smon=Integer.parseInt(sellinfo[0]);
                             sday=Integer.parseInt(sellinfo[1]);
 
-                            if(jt.getText().equals("请输入金额")||jt.getText().equals("")){
+                            if(jt.getText().equals("请输入金额")||jt.getText().equals("")||Integer.parseInt(jt.getText())==0){
                                 jlex1=new JLabel("请输入金额！",JLabel.CENTER);
                             }
                             else if(!Count.legal(bmon,bday,smon,sday)){
