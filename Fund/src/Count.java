@@ -6,12 +6,12 @@ public class Count {
     public static boolean legal(int bmon, int bday, int smon, int sday) throws FileNotFoundException {
         String buy = bmon + "-" + bday;//买入日期
         String sell = smon + "-" + sday;//卖出日期
-        String[] binfo=search(buy).split("@@");//买入信息
-        String[] sinfo=search(sell).split("@@");//卖出信息
+        String[] binfo = search(buy).split("@@");//买入信息
+        String[] sinfo = search(sell).split("@@");//卖出信息
         double buym = Double.parseDouble(binfo[1]);//买入净值
         double sellm = Double.parseDouble(sinfo[1]);//卖出净值
         int interval = interval(bmon, bday, smon, sday);
-        if (buym == 0 || sellm == 0 || interval < 0)
+        if (buym == 0 || sellm == 0 || interval < 0 )
             return false;
         return true;
     }
@@ -21,41 +21,38 @@ public class Count {
         FileReader fr = new FileReader(file);
         try {
             BufferedReader br = new BufferedReader(fr);
-            String loc="0-0@@0";//当前字符串
+            String loc = "0-0@@0";//当前字符串
             while (true) {
-                String tmp=loc;
-                String[] p=tmp.split("-|@@");//上个字符串
-                int[] pre=new int[2];//上条日期信息
-                for(int i=0;i<2;i++){
-                    pre[i]=Integer.parseInt(p[i]);
+                String tmp = loc;
+                String[] p = tmp.split("-|@@");//上个字符串
+                int[] pre = new int[2];//上条日期信息
+                for (int i = 0; i < 2; i++) {
+                    pre[i] = Integer.parseInt(p[i]);
                 }
-                loc= br.readLine();
-                if (loc==null){
-                     return "0-0@@0";
+                loc = br.readLine();
+                if (loc == null) {
+                    return "0-0@@0";
                 }
                 String[] s = loc.split("-|@@");
-                int[] str=new int[2];//文档当前日期信息
-                for(int i=0;i<2;i++){
-                    str[i]=Integer.parseInt(s[i]);
+                int[] str = new int[2];//文档当前日期信息
+                for (int i = 0; i < 2; i++) {
+                    str[i] = Integer.parseInt(s[i]);
                 }
-                String d[]=date.split("-");
-                int[] dinfo=new int[2];//输入日期信息
-                for(int i=0;i<2;i++){
-                    dinfo[i]=Integer.parseInt(d[i]);
+                String d[] = date.split("-");
+                int[] dinfo = new int[2];//输入日期信息
+                for (int i = 0; i < 2; i++) {
+                    dinfo[i] = Integer.parseInt(d[i]);
                 }
-                if (dinfo[0]==str[0]) {
-                    if(dinfo[1]==str[1]) {//日期一样
+                if (dinfo[0] == str[0]) {
+                    if (dinfo[1] == str[1]) {//日期一样
                         return loc;
-                    }
-                    else if(dinfo[1]<pre[1]&&dinfo[1]>str[1])//月中的休息日
+                    } else if (dinfo[1] < pre[1] && dinfo[1] > str[1])//月中的休息日
                     {
                         return tmp;
-                    }
-                    else if (dinfo[0]<pre[0]&&dinfo[1]>str[1]){//月末休息日
+                    } else if (dinfo[0] < pre[0] && dinfo[1] > str[1]) {//月末休息日
                         return tmp;
                     }
-                }
-                else if(dinfo[0]==pre[0]&&dinfo[0]>str[0]){
+                } else if (dinfo[0] == pre[0] && dinfo[0] > str[0]) {
                     return tmp;
                 }
             }
@@ -103,8 +100,8 @@ public class Count {
         int interval = interval(bmon, bday, smon, sday);//间隔日期
         String buy = bmon + "-" + bday;//买入日期
         String sell = smon + "-" + sday;//卖出日期
-        String[] binfo=search(buy).split("@@");//买入信息
-        String[] sinfo=search(sell).split("@@");//卖出信息
+        String[] binfo = search(buy).split("@@");//买入信息
+        String[] sinfo = search(sell).split("@@");//卖出信息
         double buym = Double.parseDouble(binfo[1]);//买入净值
         double sellm = Double.parseDouble(sinfo[1]);//卖出净值
         double result = -1;//结果，为-1时代表输入错误
@@ -133,10 +130,10 @@ public class Count {
         return result;
     }
 
-    public static boolean lastday(int month,int day){
-        if((month==2&&day==29)||(month==3&&day==31)||(month==4&&day==30)
-        ||(month==5&&day==31)||(month==6&&day==30)||(month==7&&day==31)
-        ||(month==8&&day==31)||(month==9&&day==30))
+    public static boolean lastday(int month, int day) {
+        if ((month == 2 && day == 29) || (month == 3 && day == 31) || (month == 4 && day == 30)
+                || (month == 5 && day == 31) || (month == 6 && day == 30) || (month == 7 && day == 31)
+                || (month == 8 && day == 31) || (month == 9 && day == 30))
             return true;
         return false;
     }
