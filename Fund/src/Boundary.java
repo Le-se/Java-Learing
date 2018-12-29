@@ -8,6 +8,7 @@ public class Boundary extends JFrame {
     private Font f1 = new Font("微软雅黑", Font.PLAIN, 21);
     private Font f2 = new Font("微软雅黑", Font.PLAIN, 18);
     private Font f3 = new Font("微软雅黑", Font.PLAIN, 22);
+    private Font f4 = new Font("微软雅黑",Font.PLAIN,16);
     //构造方法
     public Boundary() {
         //创建一个窗口

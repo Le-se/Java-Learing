@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddde0eb7-a506-4355-a2d9-c09dd58b4a5f" name="Default Changelist" comment="" />
+    <list default="true" id="a2142d81-2065-4e4b-981f-0a59df0aa63f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ButtonInfoShowDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GuessNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fund/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Fund/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fund/out/production/Fund/Boundary$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Fund/out/production/Fund/Boundary$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fund/out/production/Fund/Boundary$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Fund/out/production/Fund/Boundary$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fund/out/production/Fund/Boundary$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Fund/out/production/Fund/Boundary$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fund/out/production/Fund/Boundary.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Fund/out/production/Fund/Boundary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fund/src/Boundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Fund/src/Boundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test7/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,34 +21,34 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="559254377">
+    <session id="362740873">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
+          <entry key="java" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1081" />
+          <entry key="java" value="947" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1081" />
+          <entry key="JAVA" value="947" />
         </counts>
       </usages-collector>
     </session>
@@ -45,31 +56,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HandInput.java">
+        <entry file="file://$PROJECT_DIR$/src/ButtonInfoShowDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="171">
+              <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WordCount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Code.java">
+        <entry file="file://$PROJECT_DIR$/src/GuessNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-79">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="-256">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#365#514#0" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
+                <element signature="e#611#895#0" expanded="true" />
+                <element signature="e#894#895#0" expanded="true" />
+                <element signature="e#1510#1511#0" expanded="true" />
+                <element signature="e#1562#1563#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,9 +102,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/HandInput.java" />
-        <option value="$PROJECT_DIR$/src/WordCount.java" />
-        <option value="$PROJECT_DIR$/src/Code.java" />
+        <option value="$PROJECT_DIR$/src/ButtonInfoShowDemo.java" />
+        <option value="$PROJECT_DIR$/src/GuessNumber.java" />
       </list>
     </option>
   </component>
@@ -108,8 +120,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1781" />
-    <option name="height" value="1013" />
+    <option name="width" value="1785" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -119,31 +131,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="test7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test7" type="462c0819:PsiDirectoryNode" />
+              <item name="test8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test8" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="test7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test7" type="462c0819:PsiDirectoryNode" />
+              <item name="test8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test8" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546052605983" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546078451879" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fund" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -163,17 +175,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WordCount" />
-      <module name="test7" />
+  <component name="RunManager" selected="Application.GuessNumber">
+    <configuration name="ButtonInfoShowDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ButtonInfoShowDemo" />
+      <module name="test8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GuessNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GuessNumber" />
+      <module name="test8" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ButtonInfoShowDemo" />
+      <item itemvalue="Application.GuessNumber" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WordCount" />
+        <item itemvalue="Application.GuessNumber" />
+        <item itemvalue="Application.ButtonInfoShowDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -182,24 +206,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ddde0eb7-a506-4355-a2d9-c09dd58b4a5f" name="Default Changelist" comment="" />
-      <created>1545617222279</created>
+      <changelist id="a2142d81-2065-4e4b-981f-0a59df0aa63f" name="Default Changelist" comment="" />
+      <created>1546052868853</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1545617222279</updated>
-      <workItem from="1545617231462" duration="4614000" />
-      <workItem from="1545635850807" duration="51000" />
-      <workItem from="1546051139199" duration="1716000" />
+      <updated>1546052868853</updated>
+      <workItem from="1546052872612" duration="1750000" />
+      <workItem from="1546068779973" duration="28000" />
+      <workItem from="1546071692696" duration="2577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6381000" />
+    <option name="totallyTimeSpent" value="4355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2564784" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2564784" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -236,27 +261,31 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/HandInput.java">
+    <entry file="file://$PROJECT_DIR$/src/ButtonInfoShowDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="171">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordCount.java">
+    <entry file="file://$PROJECT_DIR$/src/GuessNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Code.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="-256">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#365#514#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#611#895#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#1510#1511#0" expanded="true" />
+            <element signature="e#1562#1563#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
