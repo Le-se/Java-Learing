@@ -13,15 +13,17 @@ public class HandInput {
 
         BufferedReader handin = new BufferedReader(new InputStreamReader(System.in));
         try {
-            PrintWriter print = new PrintWriter(new FileWriter(f));
+            BufferedWriter print = new BufferedWriter(new FileWriter(f));
             while (true) {
                 String item = handin.readLine();
                 if (!item.equals("end#")) {
-                    print.println(item);
+                    print.write(item);
+                    print.newLine();
                 } else {
                     break;
                 }
             }
+            print.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

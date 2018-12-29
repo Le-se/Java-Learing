@@ -6,18 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f806bc7-85bf-4b67-ae4b-087a5f131b9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../test8/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test8/src/ButtonInfoShowDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test8/src/GuessNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fund/Boundary$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fund/Boundary$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fund/Boundary$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fund/Boundary$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fund/Boundary$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fund/Boundary$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fund/Boundary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fund/Boundary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Boundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boundary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test7/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4f806bc7-85bf-4b67-ae4b-087a5f131b9a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,9 +18,9 @@
     <session id="-1244934701">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.1" value="4" />
-          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.20" value="1" />
@@ -42,7 +31,7 @@
           <entry key="project.open.time.30" value="3" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -78,14 +67,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Boundary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2470">
-              <caret line="17" column="70" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="17" selection-end-column="70" />
+            <state relative-caret-position="19">
+              <caret line="17" column="70" selection-start-line="16" selection-start-column="7" selection-end-line="17" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3075#3215#0" expanded="true" />
-                <element signature="e#3214#3215#0" expanded="true" />
-                <element signature="e#3244#3491#0" expanded="true" />
-                <element signature="e#3490#3491#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,7 +143,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1785" />
-    <option name="height" value="1026" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -169,6 +154,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,14 +171,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546070591713" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test7" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -267,11 +252,12 @@
       <workItem from="1546070497591" duration="356000" />
       <workItem from="1546071667814" duration="23000" />
       <workItem from="1546072261186" duration="2012000" />
+      <workItem from="1546079025881" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35546000" />
+    <option name="totallyTimeSpent" value="35557000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -285,7 +271,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31694353" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32093024" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -370,14 +356,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Boundary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2470">
-          <caret line="17" column="70" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="17" selection-end-column="70" />
+        <state relative-caret-position="19">
+          <caret line="17" column="70" selection-start-line="16" selection-start-column="7" selection-end-line="17" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3075#3215#0" expanded="true" />
-            <element signature="e#3214#3215#0" expanded="true" />
-            <element signature="e#3244#3491#0" expanded="true" />
-            <element signature="e#3490#3491#0" expanded="true" />
           </folding>
         </state>
       </provider>
